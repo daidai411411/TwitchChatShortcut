@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "TwitchChatShortcut",
+    "version": "1.0.0",
+    "description": "In full screen mode, press the 'C' key to open the chat window.",
+    "icons": {
+      "16": "Images/icon16.png",
+      "48": "Images/icon48.png",
+      "128": "Images/icon128.png"
+    },
+    "content_scripts": [{
+      "matches": ["https://www.twitch.tv/*"],
+      "js": [
+        "content.js"
+      ]
+    }]
+  }
+  
